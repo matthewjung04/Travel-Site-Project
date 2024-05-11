@@ -1,0 +1,8 @@
+@use './partials/font' as *;
+@use './partials/colors' as *;
+
+body {
+    background-color: $primary-site-background;
+    font-family: $font-stack;
+    font-weight: $default-font-weight;
+}
