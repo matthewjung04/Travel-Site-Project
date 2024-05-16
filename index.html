@@ -10,22 +10,22 @@
         <link href="./css/main.css" rel="stylesheet">
 
         <!-- Navigation Bar -->
-        <nav>
-            <a href="./index.html">
-                <h1>Travel Site</h1>
+        <nav class="navigation-bar">
+            <a href="./index.html" class="navigation-bar__link">
+                <h2 class="navigation-bar__title">Travel Site</h2>
             </a>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
+            <ul class="navigation-bar__list">
+                <li class="navigation-bar__item">
+                    <a href="./index.html" class="navigation-bar__link--current">Home</a>
                 </li>
-                <li>
-                    <a href="./pages/hawaii.html">Hawaii</a>
+                <li class="navigation-bar__item">
+                    <a href="./pages/hawaii.html" class="navigation-bar__link">Hawaii</a>
                 </li>
-                <li>
-                    <a href="./pages/iceland.html">Iceland</a>
+                <li class="navigation-bar__item">
+                    <a href="./pages/iceland.html" class="navigation-bar__link">Iceland</a>
                 </li>
-                <li>
-                    <a href="./pages/greece.html">Greece</a>
+                <li class="navigation-bar__item">
+                    <a href="./pages/greece.html" class="navigation-bar__link">Greece</a>
                 </li>
             </ul>
         </nav>
@@ -33,16 +33,20 @@
 
     <body>
         <main>
-            <!-- Main Page Header Section -->
-            <header>
-                <h1>Travelling Comes With Endless Discoveries</h1>
-                <p>
-                    Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.
-                </p>
-                <a href="./pages/get-started.html">
-                    <button type="button">Get started</button>
-                </a>
-                <img src="./assets/Images/hero.png" alt="header photo">
+            <!-- Hero Section -->
+            <header class="hero-section">
+                <div>
+                    <h1 class="hero-section__title">Travelling Comes With Endless Discoveries</h1>
+                    <p class="hero-section__description">
+                        Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.
+                    </p>
+                    <a href="./pages/get-started.html">
+                        <button type="button" class="hero-section__button">Get started</button>
+                    </a>
+                </div>
+                <div>
+                    <img src="./assets/Images/hero.png" alt="header photo" width="500px">
+                </div>
             </header>
 
             <!-- Recommendations Section -->
@@ -63,35 +67,46 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="footer-section">
             <!-- Footer Section: "Contact" -->
-            <div>
-                <h2>Contact</h2>
-                <p>EMAIL</p>
-                <p>info@travelsite.com</p>
+            <div class="footer-section__contact">
+                <h2 class="footer-section__title">Contact</h2>
+                <div>
+                    <p class="footer-section__subtext--head">EMAIL</p>
+                    <p class="footer-section__subtext">info@travelsite.com</p>
+                </div>
+
             </div>
             <!-- Footer Section: "Hours" -->
             <div>
-                <h2>Hours</h2>
-                <p>MONDAY - FRIDAY</p>
-                <p>9:00 AM - 5:00 PM</p>
-                <p>SATURDAY</p>
-                <p>10:00 AM - 4:00 PM</p>
-                <p>SUNDAY</p>
-                <p>Closed</p>
+                <h2 class="footer-section__title">Hours</h2>
+                <div class="footer-section__hours">
+                    <div class="footer-section__hours--dates">
+                        <p class="footer-section__subtext--head">MONDAY - FRIDAY</p>
+                        <p class="footer-section__subtext">9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="footer-section__hours--dates">
+                        <p class="footer-section__subtext--head">SATURDAY</p>
+                        <p class="footer-section__subtext">10:00 AM - 4:00 PM</p>
+                    </div>
+                    <div class="footer-section__hours--dates">
+                        <p class="footer-section__subtext--head">SUNDAY</p>
+                        <p class="footer-section__subtext">Closed</p>
+                    </div>
+                </div>
             </div>
             <!-- Footer Section: "Social" -->
             <div>
-                <h2>Social</h2>
+                <h2 class="footer-section__title--social">Social</h2>
                 <nav>
-                    <a href="https://www.instagram.com">
-                        <img src="./assets/Images/Icons/icon-instagram.png" alt="instagram logo">
+                    <a href="https://www.instagram.com" class="footer-section__link">
+                        <img src="./assets/Images/Icons/icon-instagram.png" alt="instagram logo" width="40px">
                     </a>
-                    <a href="https://www.facebook.com">
-                        <img src="./assets/Images/Icons/icon-facebook.png" alt="facebook logo">
+                    <a href="https://www.facebook.com" class="footer-section__link">
+                        <img src="./assets/Images/Icons/icon-facebook.png" alt="facebook logo" width="20px">
                     </a>
-                    <a href="https://www.twitter.com">
-                        <img src="./assets/Images/Icons/icon-twitter.png" alt="twitter logo">
+                    <a href="https://www.twitter.com" class="footer-section__link">
+                        <img src="./assets/Images/Icons/icon-twitter.png" alt="twitter logo" width="40px">
                     </a>
                 </nav>
             </div>

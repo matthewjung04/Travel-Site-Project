@@ -1,0 +1,26 @@
+.hero-section {
+  background-color: #FEFAF5;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.hero-section__title {
+  width: 30vw;
+  color: #335576;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.hero-section__description {
+  width: 45vw;
+  padding-bottom: 20px;
+}
+.hero-section__button {
+  background-color: #DB7A4E;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: 0;
+  padding: 10px 40px;
+  border-radius: 20px;
+}/*# sourceMappingURL=main.css.map */

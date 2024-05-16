@@ -1,8 +1,102 @@
-@use './partials/font' as *;
-@use './partials/colors' as *;
+@use './partials/fonts' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
 
+// Default website settings
 body {
     background-color: $primary-site-background;
     font-family: $font-stack;
+    font-size: $default-font-size;
     font-weight: $default-font-weight;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/''erð;
+}56t
+
+// Navigation bar for website
+.navigation-bar {
+    background-color: $primary-site-background;
+    padding-left: 80px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        color: $alternate-font-color;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item {
+        list-style: none;
+        padding: 10px;
+    }
+
+    &__link {
+        color: $default-font-color;
+        text-decoration: none;
+
+        &--current {
+            text-decoration: underline;
+            text-decoration-thickness: 4px;
+            text-decoration-color: $subtitle-color;
+            text-underline-offset: 10px;
+            
+           
+        }
+    }
+}
+
+// Footer section for website
+.footer-section {
+    background-color: $secondary-site-background;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__hours {
+        display: flex;
+        flex-direction: row;
+        
+        &--dates {
+            padding-right: 40px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        padding-right: 30px;
+    }
+
+    &__title {
+        color: $alternate-font-color;
+        font-size: $footer-title-size;
+
+        &--social {
+            @extend .footer-section__title;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__subtext {
+        color: $alternate-font-color;
+
+        &--head {
+            color: $subtitle-color;
+            font-size: $footer-substitle-size;
+        }
+    }
+
 }

@@ -1,0 +1,8 @@
+@use 'fonts' as *;
+@use 'variables' as *;
+
+// Navigation Bar Mixins
+
+@mixin nav-bar {
+    font-size: $default-font-weight;
+}

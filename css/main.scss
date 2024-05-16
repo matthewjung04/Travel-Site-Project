@@ -1,2 +1,39 @@
-@use './partials/font' as *;
-@use './partials/colors' as *;
+@use './partials/fonts' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+// Hero Section
+.hero-section {
+    background-color: $secondary-site-background;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__title {
+        width: 30vw;
+        color: $alternate-font-color;
+
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    &__description {
+        width: 45vw;
+        padding-bottom: 20px;
+    }
+
+    &__button {
+        background-color: $subtitle-color;
+        color: $button-font-color;
+        font-size: $button-font-size;
+
+        border: 0;
+        padding: 10px 40px;
+
+        border-radius: 20px;
+    }
+}
