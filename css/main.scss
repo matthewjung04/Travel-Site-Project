@@ -37,3 +37,40 @@
         border-radius: 20px;
     }
 }
+
+// Recommendations Section
+.recommendations {
+    background-color: $primary-site-background;
+
+    &__title {
+        @include title-font;
+        padding-top: 20px;
+    }
+
+    &__destinations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &--hawaii {
+            @include destination-cards;
+            background-image: url(../assets/images/hawaii.jpg);
+        }
+
+        &--iceland {
+            @include destination-cards;
+            background-image: url(../assets/images/iceland.jpg);
+        }
+
+        &--greece {
+            @include destination-cards;
+            background-image: url(../assets/images/greece.jpg);
+        }
+    }
+}

@@ -3,6 +3,20 @@
 
 // Navigation Bar Mixins
 
-@mixin nav-bar {
-    font-size: $default-font-weight;
+@mixin  title-font {
+    font-size: $title-size;
+    color: $alternate-font-color;
+}
+
+@mixin destination-cards {
+    width: 20vw;
+    height: 60vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 1px solid $default-color;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 20% $default-color;
 }

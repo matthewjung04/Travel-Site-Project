@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
 
     &__title {
-        color: $alternate-font-color;
+        @include title-font;
     }
 
     &__list {
@@ -36,7 +36,7 @@ body {
     }
 
     &__link {
-        color: $default-font-color;
+        color: $default-color;
         text-decoration: none;
 
         &--current {
@@ -81,8 +81,7 @@ body {
     }
 
     &__title {
-        color: $alternate-font-color;
-        font-size: $footer-title-size;
+        @include title-font;
 
         &--social {
             @extend .footer-section__title;
@@ -98,5 +97,4 @@ body {
             font-size: $footer-substitle-size;
         }
     }
-
 }
