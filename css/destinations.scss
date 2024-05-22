@@ -6,16 +6,19 @@
 .main-section {
     &__background {
         &--hawaii {
+            padding: $destination-page-padding;
             background-image: $hawaii-background;
             @include background;
         }
 
         &--iceland{
+            padding: $destination-page-padding;
             background-image: $iceland-background;
             @include background;
         }
 
         &--greece{
+            padding: $destination-page-padding;
             background-image: $greece-background;
             @include background;
         }
@@ -24,8 +27,53 @@
     &__title {
         font-size: $destination-title;
         color: $alternate-color;
-        margin: 0;
+        margin: 0; 
+        padding-bottom: 80px;
     }
 }
 
 // Itinerary Cards
+.itinerary-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__cards {
+        width: 20vw;
+        background-color: $alternate-color;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        border-radius: 5px;
+
+        &--title {
+            text-align: center;
+            padding-left: 80px;
+            padding-right: 80px;
+            border-bottom: 4px solid $default-color;
+        }
+
+        &--saturday {
+            @extend .itinerary-section__cards;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        &--list {
+            list-style: none;
+            font-size: $destination-text;
+            padding: 0;
+        }
+
+        &--item {
+            background-color: $secondary-site-background;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+
+}

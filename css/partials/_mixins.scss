@@ -5,12 +5,11 @@
 @mixin background {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 115vw;
 }
 
 
 // Navigation Bar Mixins
-
 @mixin  title-font {
     font-size: $title-size;
     color: $alternate-font-color;
