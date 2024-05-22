@@ -1,1 +1,23 @@
-/*# sourceMappingURL=destinations.css.map */
+.main-section__background--hawaii {
+  background-image: url(../../assets/images/hawaii.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section__background--iceland {
+  background-image: url(../../assets/images/iceland.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section__background--greece {
+  background-image: url(../../assets/images/greece.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section__title {
+  font-size: 56px;
+  color: #FFFFFF;
+  margin: 0;
+}/*# sourceMappingURL=destinations.css.map */

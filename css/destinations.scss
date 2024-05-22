@@ -1,3 +1,31 @@
 @use './partials/fonts' as *;
 @use './partials/mixins' as *;
 @use './partials/variables' as *;
+
+// Main section background and title
+.main-section {
+    &__background {
+        &--hawaii {
+            background-image: $hawaii-background;
+            @include background;
+        }
+
+        &--iceland{
+            background-image: $iceland-background;
+            @include background;
+        }
+
+        &--greece{
+            background-image: $greece-background;
+            @include background;
+        }
+    }
+
+    &__title {
+        font-size: $destination-title;
+        color: $alternate-color;
+        margin: 0;
+    }
+}
+
+// Itinerary Cards

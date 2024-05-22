@@ -16,6 +16,7 @@ body {
   justify-content: space-between;
 }
 .navigation-bar__title {
+  font-size: 28px;
   color: #335576;
 }
 .navigation-bar__list {
@@ -61,8 +62,8 @@ body {
   padding-right: 30px;
 }
 .footer-section__title, .footer-section__title--social {
-  color: #335576;
   font-size: 28px;
+  color: #335576;
 }
 .footer-section__title--social {
   padding-bottom: 20px;

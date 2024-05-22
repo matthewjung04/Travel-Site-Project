@@ -41,10 +41,12 @@
 // Recommendations Section
 .recommendations {
     background-color: $primary-site-background;
+    padding: 50px 100px 80px 100px;
 
     &__title {
         @include title-font;
-        padding-top: 20px;
+        margin: 0;
+        padding-bottom: 30px;
     }
 
     &__destinations {
@@ -56,21 +58,34 @@
     &__cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
 
         &--hawaii {
             @include destination-cards;
-            background-image: url(../assets/images/hawaii.jpg);
+            @include background;
+            background-image: $hawaii-background;
         }
 
         &--iceland {
             @include destination-cards;
-            background-image: url(../assets/images/iceland.jpg);
+            @include background;
+            background-image: $iceland-background;
+            margin-left: 50px;
+            margin-right: 50px;
         }
 
         &--greece {
             @include destination-cards;
-            background-image: url(../assets/images/greece.jpg);
+            @include background;
+            background-image: $greece-background;
         }
+
+        &--title {
+            @include destination-card-title;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
     }
 }

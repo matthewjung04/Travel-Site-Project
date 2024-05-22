@@ -1,6 +1,14 @@
 @use 'fonts' as *;
 @use 'variables' as *;
 
+// Background Image Mixins
+@mixin background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 // Navigation Bar Mixins
 
 @mixin  title-font {
@@ -8,15 +16,28 @@
     color: $alternate-font-color;
 }
 
+// Homepage Recommendation Mixins
 @mixin destination-cards {
     width: 20vw;
     height: 60vh;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border: 1px solid $default-color;
+    border: 1px solid $default-light-color;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 20% $default-color;
+    box-shadow: 0px 4px 4px $default-light-color;
+    
+
+    text-decoration: none;
 }
+
+@mixin destination-card-title {
+    color: $alternate-color;
+    font-size: $title-size;
+    font-weight: $bold-font-weight;
+
+    text-align: right;
+    margin: 0;
+    padding-right: 20px;
+    padding-top: 410px;
+}
+
+// Destination Page Mixins
