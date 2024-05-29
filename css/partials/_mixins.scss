@@ -5,9 +5,14 @@
 @mixin background {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 115vw;
+    background-size: cover;
 }
 
+@mixin destination-background {
+    background-repeat: no-repeat;
+    background-size: 103.75vw;
+    background-position: 90% 52%;
+}
 
 // Navigation Bar Mixins
 @mixin  title-font {

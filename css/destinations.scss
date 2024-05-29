@@ -8,19 +8,19 @@
         &--hawaii {
             padding: $destination-page-padding;
             background-image: $hawaii-background;
-            @include background;
+            @include destination-background;
         }
 
         &--iceland{
             padding: $destination-page-padding;
             background-image: $iceland-background;
-            @include background;
+            @include destination-background;
         }
 
         &--greece{
             padding: $destination-page-padding;
             background-image: $greece-background;
-            @include background;
+            @include destination-background;
         }
     }
 
@@ -28,7 +28,7 @@
         font-size: $destination-title;
         color: $alternate-color;
         margin: 0; 
-        padding-bottom: 80px;
+        padding-bottom: 50px;
     }
 }
 
@@ -39,7 +39,8 @@
     justify-content: center;
 
     &__cards {
-        width: 20vw;
+        text-align: center;
+        width: 15vw;
         background-color: $alternate-color;
         padding-left: 20px;
         padding-right: 20px;
@@ -48,8 +49,8 @@
 
         &--title {
             text-align: center;
-            padding-left: 80px;
-            padding-right: 80px;
+            padding-left: auto;
+            padding-right: auto;
             border-bottom: 4px solid $default-color;
         }
 

@@ -8,10 +8,14 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navigation-bar {
   background-color: #FFFFFF;
-  padding-left: 80px;
-  padding-right: 70px;
+  padding-left: 105px;
+  padding-right: 105px;
   display: flex;
   justify-content: space-between;
 }
