@@ -28,7 +28,7 @@
         font-size: $destination-title;
         color: $alternate-color;
         margin: 0; 
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
 }
 
@@ -40,14 +40,17 @@
 
     &__cards {
         text-align: center;
-        width: 15vw;
+        width: 18vw;
+        height: 40vh;
         background-color: $alternate-color;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         border-radius: 5px;
 
         &--title {
+            font-size: $itinerary-title;
+            font-weight: $bold-font-weight;
             text-align: center;
             padding-left: auto;
             padding-right: auto;
@@ -62,19 +65,17 @@
 
         &--list {
             list-style: none;
-            font-size: $destination-text;
+            font-size: $default-font-size;
             padding: 0;
         }
 
         &--item {
             background-color: $secondary-site-background;
             text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
         }
     }
-
-
 }

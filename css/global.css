@@ -27,15 +27,15 @@ a {
   display: flex;
   flex-direction: row;
 }
-.navigation-bar__item {
+.navigation-bar__list__item {
   list-style: none;
   padding: 10px;
 }
-.navigation-bar__link {
+.navigation-bar__list__item__link {
   color: #000000;
   text-decoration: none;
 }
-.navigation-bar__link--current {
+.navigation-bar__list__item__link--current {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-decoration-color: #DB7A4E;
@@ -54,28 +54,28 @@ a {
   display: flex;
   flex-direction: column;
 }
-.footer-section__hours {
-  display: flex;
-  flex-direction: row;
-}
-.footer-section__hours--dates {
-  padding-right: 40px;
-}
-.footer-section__link {
-  text-decoration: none;
-  padding-right: 30px;
-}
-.footer-section__title, .footer-section__title--social {
+.footer-section__contact__title, .footer-section__social__title, .footer-section__hours__title {
   font-size: 28px;
   color: #335576;
 }
-.footer-section__title--social {
-  padding-bottom: 20px;
-}
-.footer-section__subtext {
+.footer-section__contact__subtext, .footer-section__hours__dates__columns__subtext {
   color: #335576;
 }
-.footer-section__subtext--head {
+.footer-section__contact__subtext--head, .footer-section__hours__dates__columns__subtext--head {
   color: #DB7A4E;
   font-size: 10px;
+}
+.footer-section__hours__dates {
+  display: flex;
+  flex-direction: row;
+}
+.footer-section__hours__dates__columns {
+  padding-right: 40px;
+}
+.footer-section__social__title {
+  padding-bottom: 20px;
+}
+.footer-section__social__link {
+  text-decoration: none;
+  padding-right: 30px;
 }/*# sourceMappingURL=global.css.map */
