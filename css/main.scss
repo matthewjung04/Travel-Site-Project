@@ -64,6 +64,10 @@
             @include destination-cards;
             @include background;
             background-image: $hawaii-background;
+
+            &:hover {
+                @include card-animation;
+            }
         }
 
         &--iceland {
@@ -72,12 +76,20 @@
             background-image: $iceland-background;
             margin-left: 50px;
             margin-right: 50px;
+
+            &:hover {
+                @include card-animation;
+            }
         }
 
         &--greece {
             @include destination-cards;
             @include background;
             background-image: $greece-background;
+
+            &:hover {
+                @include card-animation;
+            }
         }
 
         &--title {

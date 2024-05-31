@@ -32,20 +32,27 @@ a {
     &__list {
         display: flex;
         flex-direction: row;
+        align-items: center;
+
+        &:has(.navigation-bar__list__item__link:hover) .navigation-bar__list__item__link--current {
+            text-decoration: none;
+        }
 
         &__item {
             list-style: none;
-            padding: 10px;
 
             &__link {
                 color: $default-color;
                 text-decoration: none;
-        
+                padding: 10px;
+
                 &--current {
-                    text-decoration: underline;
-                    text-decoration-thickness: 4px;
-                    text-decoration-color: $subtitle-color;
-                    text-underline-offset: 10px;
+                    @include nav-bar-animation;
+                    padding: 10px;
+                }
+
+                &:hover {
+                    @include nav-bar-animation;
                 }
             }
         }

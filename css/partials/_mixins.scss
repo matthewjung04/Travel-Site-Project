@@ -8,16 +8,17 @@
     background-size: cover;
 }
 
-@mixin destination-background {
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: 100% 52.5%;
-}
-
 // Navigation Bar Mixins
-@mixin  title-font {
+@mixin title-font {
     font-size: $title-size;
     color: $alternate-font-color;
+}
+
+@mixin nav-bar-animation {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: $subtitle-color;
+    text-underline-offset: 10px;
 }
 
 // Homepage Recommendation Mixins
@@ -33,6 +34,11 @@
     text-decoration: none;
 }
 
+@mixin card-animation {
+    border: 3px solid $subtitle-color;
+    opacity: 0.8;
+}
+
 @mixin destination-card-title {
     color: $alternate-color;
     font-size: $title-size;
@@ -45,3 +51,8 @@
 }
 
 // Destination Page Mixins
+@mixin destination-background {
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: 100% 52.5%;
+}

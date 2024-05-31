@@ -30,7 +30,7 @@
   padding: 50px 100px 80px 100px;
 }
 .recommendations__title {
-  font-size: 28px;
+  font-size: 20px;
   color: #335576;
   margin: 0;
   padding-bottom: 30px;
@@ -57,6 +57,10 @@
   background-size: cover;
   background-image: url(../../assets/images/hawaii.jpg);
 }
+.recommendations__cards--hawaii:hover {
+  border: 3px solid #DB7A4E;
+  opacity: 0.8;
+}
 .recommendations__cards--iceland {
   width: 20vw;
   height: 60vh;
@@ -71,6 +75,10 @@
   margin-left: 50px;
   margin-right: 50px;
 }
+.recommendations__cards--iceland:hover {
+  border: 3px solid #DB7A4E;
+  opacity: 0.8;
+}
 .recommendations__cards--greece {
   width: 20vw;
   height: 60vh;
@@ -83,9 +91,13 @@
   background-size: cover;
   background-image: url(../../assets/images/greece.jpg);
 }
+.recommendations__cards--greece:hover {
+  border: 3px solid #DB7A4E;
+  opacity: 0.8;
+}
 .recommendations__cards--title {
   color: #FFFFFF;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   text-align: right;
   margin: 0;
