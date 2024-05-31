@@ -28,13 +28,83 @@
 
     &__button {
         background-color: $subtitle-color;
-        color: $button-font-color;
-        font-size: $button-font-size;
 
         border: 0;
         padding: 10px 40px;
 
         border-radius: 20px;
+
+        &__link {
+            color: $button-font-color;
+            font-size: $button-font-size;
+        }
+
+        &:hover {
+            filter: brightness(90%);
+        }
+    }
+
+    // Get Started Form
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        &__name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            &__fill {
+                width: 200px;
+                height: 20px;
+            }
+        }
+
+        &__contact {
+            display: flex;
+            flex-direction: column;
+
+            &__fill {
+                margin-bottom: 15px;
+                height: 20px;
+            }
+        }
+
+        &__destination {
+            font-size: $default-font-size;
+            margin-top: 10px;
+
+            display: flex;
+            justify-content: space-between;
+
+            &__select {
+                display: flex;
+                flex-direction: column;
+
+                &__choice {
+                    font-size: $default-font-size;
+                    width: 200px;
+                    height: 25px;
+                }
+            }
+
+            &__button {
+                @extend .hero-section__button;
+                width: 175px;
+                height: 50px;
+                margin-top: 60px;
+
+                &--submit {
+                    @extend .hero-section__form__destination__button;
+                    width: 120px;
+                    margin: 0;
+                }
+
+                &__link {
+                    @extend .hero-section__button__link;
+                }
+            }
+        }
     }
 }
 
@@ -49,6 +119,7 @@
         padding-bottom: 30px;
     }
 
+    // Main Page Section
     &__cards {
         display: flex;
         flex-direction: row;

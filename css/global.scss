@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+input, select {
+    font-size: $default-font-size;
+}
+
 // Navigation bar for website
 .navigation-bar {
     background-color: $primary-site-background;

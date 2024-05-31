@@ -16,15 +16,64 @@
   width: 45vw;
   padding-bottom: 20px;
 }
-.hero-section__button {
+.hero-section__button, .hero-section__form__destination__button, .hero-section__form__destination__button--submit {
   background-color: #DB7A4E;
-  color: #FFFFFF;
-  font-size: 18px;
   border: 0;
   padding: 10px 40px;
   border-radius: 20px;
 }
-
+.hero-section__button__link, .hero-section__form__destination__button__link {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.hero-section__button:hover, .hero-section__form__destination__button:hover, .hero-section__form__destination__button--submit:hover {
+  filter: brightness(90%);
+}
+.hero-section__form {
+  display: flex;
+  flex-direction: column;
+}
+.hero-section__form__name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.hero-section__form__name__fill {
+  width: 200px;
+  height: 20px;
+}
+.hero-section__form__contact {
+  display: flex;
+  flex-direction: column;
+}
+.hero-section__form__contact__fill {
+  margin-bottom: 15px;
+  height: 20px;
+}
+.hero-section__form__destination {
+  font-size: 16px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section__form__destination__select {
+  display: flex;
+  flex-direction: column;
+}
+.hero-section__form__destination__select__choice {
+  font-size: 16px;
+  width: 200px;
+  height: 25px;
+}
+.hero-section__form__destination__button, .hero-section__form__destination__button--submit {
+  width: 175px;
+  height: 50px;
+  margin-top: 60px;
+}
+.hero-section__form__destination__button--submit {
+  width: 120px;
+  margin: 0;
+}
 .recommendations {
   background-color: #FFFFFF;
   padding: 50px 100px 80px 100px;
