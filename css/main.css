@@ -30,15 +30,10 @@
   padding: 50px 100px 80px 100px;
 }
 .recommendations__title {
-  font-size: 20px;
+  font-size: 22px;
   color: #335576;
   margin: 0;
   padding-bottom: 30px;
-}
-.recommendations__destinations {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 .recommendations__cards {
   display: flex;
@@ -95,9 +90,9 @@
   border: 3px solid #DB7A4E;
   opacity: 0.8;
 }
-.recommendations__cards--title {
+.recommendations__cards__title {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   text-align: right;
   margin: 0;

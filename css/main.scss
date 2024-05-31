@@ -49,12 +49,6 @@
         padding-bottom: 30px;
     }
 
-    &__destinations {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     &__cards {
         display: flex;
         flex-direction: row;
@@ -92,7 +86,7 @@
             }
         }
 
-        &--title {
+        &__title {
             @include destination-card-title;
         }
     }

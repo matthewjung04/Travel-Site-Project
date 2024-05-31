@@ -48,7 +48,7 @@
         padding-bottom: 20px;
         border-radius: 5px;
 
-        &--title {
+        &__title {
             font-size: $itinerary-title;
             font-weight: $bold-font-weight;
             text-align: center;
@@ -63,13 +63,13 @@
             margin-right: 50px;
         }
 
-        &--list {
+        &__list {
             list-style: none;
             font-size: $default-font-size;
             padding: 0;
         }
 
-        &--item {
+        &__item {
             background-color: $secondary-site-background;
             text-align: center;
             margin-top: 15px;

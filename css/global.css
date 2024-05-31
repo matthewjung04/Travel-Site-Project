@@ -20,13 +20,15 @@ a {
   justify-content: space-between;
 }
 .navigation-bar__title {
-  font-size: 20px;
+  font-size: 22px;
   color: #335576;
 }
 .navigation-bar__list {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .navigation-bar__list:has(.navigation-bar__list__item__link:hover) .navigation-bar__list__item__link--current {
   text-decoration: none;
@@ -66,7 +68,7 @@ a {
   flex-direction: column;
 }
 .footer-section__contact__title, .footer-section__social__title, .footer-section__hours__title {
-  font-size: 20px;
+  font-size: 22px;
   color: #335576;
 }
 .footer-section__contact__subtext, .footer-section__hours__dates__columns__subtext {

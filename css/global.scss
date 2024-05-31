@@ -33,6 +33,8 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
 
         &:has(.navigation-bar__list__item__link:hover) .navigation-bar__list__item__link--current {
             text-decoration: none;

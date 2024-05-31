@@ -41,7 +41,7 @@
   padding-bottom: 20px;
   border-radius: 5px;
 }
-.itinerary-section__cards--title {
+.itinerary-section__cards__title {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -53,12 +53,12 @@
   margin-left: 50px;
   margin-right: 50px;
 }
-.itinerary-section__cards--list {
+.itinerary-section__cards__list {
   list-style: none;
   font-size: 16px;
   padding: 0;
 }
-.itinerary-section__cards--item {
+.itinerary-section__cards__item {
   background-color: #FEFAF5;
   text-align: center;
   margin-top: 15px;
