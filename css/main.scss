@@ -52,11 +52,12 @@
 
         &__name {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             margin-bottom: 15px;
 
             &__fill {
-                width: 200px;
+                width: 170px;
                 height: 20px;
             }
         }
@@ -125,6 +126,27 @@
 
         &__description {
             width: 100vw;
+        }
+
+        &__form {
+            &__name {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &_destination {
+                display: flex;
+                flex-direction: row;
+                align-self: start;
+            }
+        }
+    }
+
+    @include tablet {
+        padding: 30px;
+
+        & img {
+            width: 350px;
         }
     }
 }
@@ -223,7 +245,23 @@
                 text-align: right;
                 margin: 0;
                 padding-right: 20px;
-                padding-top: 10rem;
+                padding-top: 150px;
+            }
+        }
+    }
+
+    @include tablet {
+        &__cards {
+            &__title {
+                padding-top: 250px;
+            }
+        }
+    }
+
+    @include desktop {
+        &__cards {
+            &__title {
+                padding-top: 245px;
             }
         }
     }

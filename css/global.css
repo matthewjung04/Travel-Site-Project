@@ -128,4 +128,20 @@ input, select {
     display: flex;
     flex-wrap: wrap;
   }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-section {
+    padding: 20px;
+    padding-right: 0;
+    font-size: 12px;
+  }
+  .footer-section img {
+    width: 30px;
+  }
+  .footer-section img.facebook-logo {
+    width: 15px;
+  }
+  .footer-section__contact {
+    padding-right: 20px;
+  }
 }/*# sourceMappingURL=global.css.map */

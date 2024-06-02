@@ -66,6 +66,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .main-section--hawaii {
     padding: 40px;
+    padding-bottom: 60px;
   }
   .main-section--iceland {
     padding: 40px;
@@ -97,12 +98,26 @@
     font-size: 12px;
     text-align: center;
     margin: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
     padding-right: 8px;
     padding-left: 8px;
   }
   .main-section__itinerary__cards--saturday {
     margin: 15px 0 15px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .main-section__itinerary__cards, .main-section__itinerary__cards--saturday {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 60vh;
+  }
+}
+@media (min-width: 1280px) and (max-height: 778px) {
+  .main-section__itinerary__cards, .main-section__itinerary__cards--saturday {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 65vh;
   }
 }/*# sourceMappingURL=destinations.css.map */

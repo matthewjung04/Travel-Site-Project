@@ -73,9 +73,9 @@
     }
 }
 
-// Desktop: > 1280px
+// Desktop: 1280px
 @mixin desktop {
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: $desktop-width-breakpoint) and (max-height: $desktop-height-breakpoint) {
         @content;
     }
 }
