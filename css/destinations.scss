@@ -3,79 +3,127 @@
 @use './partials/variables' as *;
 
 // Main section background and title
+// Itinerary Cards
 .main-section {
-    &__background {
-        &--hawaii {
-            padding: $destination-page-padding;
-            background-image: $hawaii-background;
-            @include destination-background;
-        }
+    &--hawaii {
+        padding: $destination-page-padding;
+        background-image: $hawaii-background;
+        @include destination-background;
+    }
 
-        &--iceland{
-            padding: $destination-page-padding;
-            background-image: $iceland-background;
-            @include destination-background;
-        }
+    &--iceland{
+        padding: $destination-page-padding;
+        background-image: $iceland-background;
+        @include destination-background;
+    }
 
-        &--greece{
-            padding: $destination-page-padding;
-            background-image: $greece-background;
-            @include destination-background;
-        }
+    &--greece{
+        padding: $destination-page-padding;
+        background-image: $greece-background;
+        @include destination-background;
     }
 
     &__title {
         font-size: $destination-title;
         color: $alternate-color;
-        margin: 0; 
-        padding-bottom: 60px;
-    }
-}
-
-// Itinerary Cards
-.itinerary-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    &__cards {
-        text-align: center;
-        width: 18vw;
-        height: 40vh;
-        background-color: $alternate-color;
-        padding-left: 20px;
-        padding-right: 20px;
         padding-bottom: 20px;
-        border-radius: 5px;
+    }
+
+    &__itinerary {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__cards {
+            text-align: center;
+            width: 16vw;
+            height: 48vh;
+            background-color: $alternate-color;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+    
+            &__title {
+                font-size: $itinerary-title;
+                font-weight: $bold-font-weight;
+                text-align: center;
+                padding-left: auto;
+                padding-right: auto;
+                border-bottom: 4px solid $default-color;
+            }
+    
+            &--saturday {
+                @extend .main-section__itinerary__cards;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+    
+            &__list {
+                list-style: none;
+                font-size: $default-font-size;
+                padding: 0;
+
+                &__item {
+                    background-color: $secondary-site-background;
+                    text-align: center;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    @include mobile {
+        &--hawaii {
+            padding: 40px;
+        }
+
+        &--iceland {
+            padding: 40px;
+        }
+
+        &--greece {
+            padding: 40px;
+        }
 
         &__title {
-            font-size: $itinerary-title;
-            font-weight: $bold-font-weight;
-            text-align: center;
-            padding-left: auto;
-            padding-right: auto;
-            border-bottom: 4px solid $default-color;
+            margin: 10px;
         }
 
-        &--saturday {
-            @extend .itinerary-section__cards;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
+        &__itinerary {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-        &__list {
-            list-style: none;
-            font-size: $default-font-size;
-            padding: 0;
-        }
+            &__cards {
+                width: 90vw;
+                height: 18vh;
+                padding: 0;
 
-        &__item {
-            background-color: $secondary-site-background;
-            text-align: center;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding-top: 12px;
-            padding-bottom: 12px;
+                &__list {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+
+                    &__item {
+                        font-size: 12px;
+                        text-align: center;
+                        margin: 0;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        padding-right: 8px;
+                        padding-left: 8px;
+                    }
+                }
+
+                &--saturday {
+                    margin: 15px 0 15px 0;
+                }
+            }
         }
     }
 }

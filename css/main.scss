@@ -14,7 +14,7 @@
     justify-content: space-evenly;
 
     &__title {
-        width: 30vw;
+        width: 40vw;
         color: $alternate-font-color;
 
         margin: 0;
@@ -22,7 +22,8 @@
     }
 
     &__description {
-        width: 45vw;
+        font-size: $hero-description;
+        width: 40vw;
         padding-bottom: 20px;
     }
 
@@ -106,6 +107,26 @@
             }
         }
     }
+
+    @include mobile {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        & img {
+            margin-top: 20px;
+            width: 100px;
+        }
+
+        &__title {
+            width: 100vw;
+        }
+
+        &__description {
+            width: 100vw;
+        }
+    }
 }
 
 // Recommendations Section
@@ -159,6 +180,51 @@
 
         &__title {
             @include destination-card-title;
+        }
+    }
+
+    @include mobile {
+        align-items: center;
+        padding: 0;
+
+        &__title {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--hawaii {
+                width: 65vw;
+                height: 30vh;
+            }
+
+            &--iceland {
+                width: 65vw;
+                height: 30vh;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            &--greece {
+                width: 65vw;
+                height: 30vh;
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                color: $alternate-color;
+                font-size: $title-size;
+                font-weight: $bold-font-weight;
+            
+                text-align: right;
+                margin: 0;
+                padding-right: 20px;
+                padding-top: 10rem;
+            }
         }
     }
 }

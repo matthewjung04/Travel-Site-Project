@@ -15,4 +15,17 @@ $hawaii-background: url(../../assets/images/hawaii.jpg);
 $iceland-background: url(../../assets/images/iceland.jpg);
 $greece-background: url(../../assets/images/greece.jpg);
 
-$destination-page-padding: 65px 100px 130px 100px;
+$destination-page-padding: 40px 100px 140px 100px;
+
+// Media Query Breakpoints
+
+// Mobile: 320px ~ 767px
+$mobile-min-breakpoint: 320px;
+$mobile-max-breakpoint: 767px;
+
+// Tablet: 768px ~ 1279px
+$tablet-min-breakpoint: 768px;
+$tablet-max-breakpoint: 1279px;
+
+// Desktop: > 1280px
+$desktop-breakpoint: 1280px;

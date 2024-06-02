@@ -24,7 +24,7 @@
 // Homepage Recommendation Mixins
 @mixin destination-cards {
     width: 20vw;
-    height: 60vh;
+    height: 52vh;
 
     border: 1px solid $default-light-color;
     border-radius: 5px;
@@ -47,12 +47,35 @@
     text-align: right;
     margin: 0;
     padding-right: 20px;
-    padding-top: 410px;
+    padding-top: 355px;
 }
 
 // Destination Page Mixins
 @mixin destination-background {
     background-repeat: no-repeat;
     background-size: 100vw;
-    background-position: 100% 52.5%;
+    background-position: 100% 52.25%;
+}
+
+// Respopnsive Design
+
+// Mobile: 320px ~ 767px
+@mixin mobile {
+    @media (min-width: $mobile-min-breakpoint) and (max-width: $mobile-max-breakpoint) {
+        @content;
+    }
+}
+
+// Tablet: 768px ~ 1279px
+@mixin tablet {
+    @media (min-width: $tablet-min-breakpoint) and (max-width: $tablet-max-breakpoint) {
+        @content;
+    }
+}
+
+// Desktop: > 1280px
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
 }

@@ -1,7 +1,7 @@
 body {
   background-color: #FFFFFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -13,18 +13,18 @@ a {
 }
 
 input, select {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .navigation-bar {
   background-color: #FFFFFF;
-  padding-left: 105px;
+  padding-left: 100px;
   padding-right: 105px;
   display: flex;
   justify-content: space-between;
 }
 .navigation-bar__title {
-  font-size: 22px;
+  font-size: 1.5rem;
   color: #335576;
 }
 .navigation-bar__list {
@@ -58,6 +58,20 @@ input, select {
   text-decoration-color: #DB7A4E;
   text-underline-offset: 10px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .navigation-bar {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .navigation-bar__title {
+    margin-bottom: 10px;
+  }
+  .navigation-bar__list {
+    padding: 0;
+  }
+}
 
 .footer-section {
   background-color: #FEFAF5;
@@ -72,7 +86,7 @@ input, select {
   flex-direction: column;
 }
 .footer-section__contact__title, .footer-section__social__title, .footer-section__hours__title {
-  font-size: 22px;
+  font-size: 1.5rem;
   color: #335576;
 }
 .footer-section__contact__subtext, .footer-section__hours__dates__columns__subtext {
@@ -80,7 +94,7 @@ input, select {
 }
 .footer-section__contact__subtext--head, .footer-section__hours__dates__columns__subtext--head {
   color: #DB7A4E;
-  font-size: 10px;
+  font-size: 0.75rem;
 }
 .footer-section__hours__dates {
   display: flex;
@@ -95,4 +109,23 @@ input, select {
 .footer-section__social__link {
   text-decoration: none;
   padding-right: 30px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-section {
+    height: 120vh;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  .footer-section h2 {
+    font-size: 16px;
+  }
+  .footer-section__contact {
+    display: inline-block;
+  }
+  .footer-section__hours__dates {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=global.css.map */
