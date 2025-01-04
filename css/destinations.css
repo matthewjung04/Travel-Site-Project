@@ -1,20 +1,20 @@
 .main-section--hawaii {
   padding: 40px 100px 140px 100px;
-  background-image: url(../../assets/images/hawaii.jpg);
+  background-image: url(../assets/images/hawaii.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: 100% 52.25%;
 }
 .main-section--iceland {
   padding: 40px 100px 140px 100px;
-  background-image: url(../../assets/images/iceland.jpg);
+  background-image: url(../assets/images/iceland.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: 100% 52.25%;
 }
 .main-section--greece {
   padding: 40px 100px 140px 100px;
-  background-image: url(../../assets/images/greece.jpg);
+  background-image: url(../assets/images/greece.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: 100% 52.25%;
@@ -32,7 +32,7 @@
 .main-section__itinerary__cards, .main-section__itinerary__cards--saturday {
   text-align: center;
   width: 16vw;
-  height: 48vh;
+  height: 40vh;
   background-color: #FFFFFF;
   padding-left: 20px;
   padding-right: 20px;
@@ -118,6 +118,6 @@
   .main-section__itinerary__cards, .main-section__itinerary__cards--saturday {
     padding-left: 20px;
     padding-right: 20px;
-    height: 65vh;
+    height: 45vh;
   }
 }/*# sourceMappingURL=destinations.css.map */

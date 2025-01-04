@@ -137,7 +137,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../assets/images/hawaii.jpg);
+  background-image: url(../assets/images/hawaii.jpg);
 }
 .recommendations__cards--hawaii:hover {
   border: 3px solid #DB7A4E;
@@ -153,7 +153,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../assets/images/iceland.jpg);
+  background-image: url(../assets/images/iceland.jpg);
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -171,7 +171,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../assets/images/greece.jpg);
+  background-image: url(../assets/images/greece.jpg);
 }
 .recommendations__cards--greece:hover {
   border: 3px solid #DB7A4E;
@@ -182,9 +182,10 @@
   font-size: 1.5rem;
   font-weight: 700;
   text-align: right;
+  justify-self: end;
   margin: 0;
   padding-right: 20px;
-  padding-top: 355px;
+  padding-top: 455px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .recommendations {
@@ -232,6 +233,6 @@
 }
 @media (min-width: 1280px) and (max-height: 778px) {
   .recommendations__cards__title {
-    padding-top: 245px;
+    padding-top: 315px;
   }
 }/*# sourceMappingURL=main.css.map */
